@@ -1,0 +1,107 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* creation de navbar */
+span{
+    margin: 20px;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+    width: 100%;
+}
+.image img{
+    width: 130px;
+   
+}
+.image{
+    display: flex;
+    max-width: 50%;
+   
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    border: solid 1px white;
+    width: 650px;
+    
+}
+.link ul {
+    display: flex;
+    
+    margin: auto;
+   
+}
+.link ul li{
+       list-style-type: none;
+      padding: 20px;
+      
+}
+.link ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.log{
+    display: flex;
+    justify-content: center;
+    border: solid 1px white;
+}
+.log img{
+    width: 70px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .image {
+        max-width: 100%; /* Allow the image section to take full width */
+        justify-content: center; /* Center the content */
+    }
+
+    .link {
+        width: 100%; /* Allow link section to take full width */
+        border: none;
+    }
+
+    .link ul {
+        flex-direction: column; /* Stack the links vertically */
+       
+    }
+
+    .link ul li {
+        padding:   5px 45px; /* Adjust padding for smaller screens */
+        border-radius: 5px;
+        text-align: center;
+        margin: 2px;
+    }
+    .link ul li:hover {
+        background-color: #376a03;
+     
+        transition: 1s;
+    }
+    .log{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .image img {
+        width: 100px; /* Adjust image size for small screens */
+    }
+
+    .link ul li a {
+        font-size: 16px; /* Decrease font size for better readability */
+    }
+}
