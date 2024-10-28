@@ -66,22 +66,22 @@ span{
     }
 
     .image {
-        max-width: 100%; /* Allow the image section to take full width */
-        justify-content: center; /* Center the content */
+        max-width: 100%; 
+        justify-content: center; 
     }
 
     .link {
-        width: 100%; /* Allow link section to take full width */
+        width: 100%; 
         border: none;
     }
 
     .link ul {
-        flex-direction: column; /* Stack the links vertically */
+        flex-direction: column; 
        
     }
 
     .link ul li {
-        padding:   5px 45px; /* Adjust padding for smaller screens */
+        padding:   5px 45px; 
         border-radius: 5px;
         text-align: center;
         margin: 2px;
@@ -98,10 +98,10 @@ span{
 
 @media (max-width: 480px) {
     .image img {
-        width: 100px; /* Adjust image size for small screens */
+        width: 100px; 
     }
 
     .link ul li a {
-        font-size: 16px; /* Decrease font size for better readability */
+        font-size: 16px; 
     }
 }
