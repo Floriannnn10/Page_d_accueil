@@ -2,7 +2,7 @@
 <footer class="footer-bg pt-4 pb-4">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-lg col">
           <h5 class="footer-text">LES ÉLÉPHANTS</h5>
           <ul class="list-unstyled footer-text">
             <li><a href="#">Equipe</a></li>
@@ -13,14 +13,14 @@
             <li><a href="#">Partenaires</a></li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col-lg col">
           <h5 class="footer-text">SERVICES</h5>
           <ul class="list-unstyled footer-text">
             <li><a href="#">Mon compte</a></li>
             <li><a href="#">Boutique</a></li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col-lg col">
           <h5 class="footer-text">LANGUES</h5>
           <ul class="list-unstyled footer-text">
             <li><a href="#">Français</a></li>
@@ -29,7 +29,7 @@
             <li><a href="#">Español</a></li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col-lg col">
           <h5 class="footer-text">AIDE</h5>
           <ul class="list-unstyled footer-text">
             <li><a href="#">Mentions légales</a></li>
@@ -38,7 +38,7 @@
             <li><a href="#">Centre d'aide</a></li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col-lg col">
           <h5 class="footer-text">REJOIGNEZ-NOUS</h5>
           <div class="social-icons footer-text">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
