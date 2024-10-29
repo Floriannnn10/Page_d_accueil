@@ -386,7 +386,7 @@ body{
     font-family: Montserrat;
 }
 .container{
-    background-color: white;
+   /*  background-color: white; */
     height: 50vh;
     width: 95%;
     display: flex;
@@ -440,4 +440,29 @@ button{
     .boutton{
         margin-right: none;
     }
+}
+
+.footer-bg {
+    background-color: #004d00;
+}
+.footer-text {
+    color: white;
+    
+}
+.social-icons i {
+    margin-right: 15px;
+    font-size: 24px;
+    color: white;
+}
+.footer-image {
+    margin-top: 15px;
+    max-width: 100%; 
+    height: auto; 
+}
+.footer-text a {
+    color: white; 
+    text-decoration: none; 
+}
+.footer-text a:hover {
+    text-decoration: underline; 
 }
