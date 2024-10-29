@@ -1,5 +1,387 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* creation de navbar */
+span{
+    margin: 20px;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orangered;
+    width: 100%;
+}
+.image img{
+    width: 130px;
+   
+}
+.image{
+    display: flex;
+    max-width: 50%;
+   
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    border: solid 1px white;
+    width: 650px;
+    
+}
+.link ul {
+    display: flex;
+    
+    margin: auto;
+   
+}
+.link ul li{
+       list-style-type: none;
+      padding: 20px;
+      
+}
+.link ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.log{
+    display: flex;
+    justify-content: center;
+    border: solid 1px white;
+}
+.log img{
+    width: 70px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .image {
+        max-width: 100%; 
+        justify-content: center; 
+    }
+
+    .link {
+        width: 100%; 
+        border: none;
+    }
+
+    .link ul {
+        flex-direction: column; 
+       
+    }
+
+    .link ul li {
+        padding:   5px 45px; 
+        border-radius: 5px;
+        text-align: center;
+        margin: 2px;
+    }
+    .link ul li:hover {
+        background-color: #376a03;
+     
+        transition: 1s;
+    }
+    .log{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .image img {
+        width: 100px; 
+    }
+
+    .link ul li a {
+        font-size: 16px; 
+    }
+}
+#contenu {
+    position: relative; /* Assure que ::before est limité à #contenu */
+    height: 90vh;
+    background-image: url(../img/Franck\ kessie\ site\ web1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden; /* Utile pour couper tout débordement, mais peut être supprimé pour tests */
+}
+
+
+
+#contenu .row {
+    position: relative;
+    z-index: 2; /* Assure que le contenu est au-dessus du filtre */
+    color: white;
+}
+
+/* Styles pour les titres */
+.col h3 {
+    width: 8vw;
+    background-color: rgb(9, 55, 9);
+    text-align: center;
+}
+        
+.col h1{
+    font-size: 60px;
+}
+
+.colonne1 {
+    transform: translate(80px, 100px); /* Réduisez la translation si nécessaire */
+    color: white;
+    margin-top: 10px;
+    margin-left: 200px; /* Gardez cet espacement pour aligner */
+    position: relative; /* Pour pouvoir utiliser z-index */
+    z-index: 2; /* Assure que ce contenu est au-dessus de l'image */
+}
+
+.colonne1 h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.colonne2 {
+    height: auto; /* Permet à la colonne de s'ajuster à la taille de l'image */
+    text-align: right; /* Si vous voulez aligner l'image à droite */
+}
+
+.colonne2 img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de la colonne */
+    height: auto; /* Garde les proportions de l'image */
+    display: block; /* Évite les espaces sous l'image */
+    margin-top: 35px; /* Centre l'image horizontalement si nécessaire */
+}
+
+.chiffre {
+    position: absolute; /* Positionne le chiffre */
+    bottom: -200px; /* Ajustez cette valeur pour le positionnement */
+    left: -200px; /* Ajustez cette valeur pour le positionnement */
+    z-index: -3; /* S'assure qu'il est au-dessus des autres éléments */
+    color: rgb(255, 255, 255); /* Couleur et opacité */
+    font-size: 500px; /* Taille du chiffre */
+}
+
+.chiffre h1{
+    font-size: 470px; /* Taille du chiffre */
+}
+
+.drapci {
+    display: flex; /* Aligne les spans horizontalement */
+    margin-top: 20px; /* Augmente l'espace entre le titre et les couleurs */
+    margin-left: 60px; /* Décale les spans vers la droite */
+}
+
+.drapci span {
+    width: 50px; /* Largeur de chaque rectangle de couleur */
+    height: 5px; /* Hauteur de chaque rectangle de couleur */
+    margin: 0; /* Supprime tout espace entre les spans */
+}
+
+.drapci span:nth-child(1) { background-color: rgb(239, 88, 33); } /* Couleur orange */
+.drapci span:nth-child(2) { background-color: white; }  /* Couleur blanche */
+.drapci span:nth-child(3) { background-color: green; }  /* Couleur verte */
+
+.content{
+    height: 91vh;
+}
+
+.cardContainer {
+    position: absolute;
+    display: flex; /* Aligne les cartes horizontalement */
+    bottom: 100px;
+    z-index: 100;
+    gap: 10px; /* Espace entre les cartes */
+}
+
+.card {
+    margin: 0; /* Enlève les marges autour de chaque carte */
+    max-width: 530px; /* Limite la largeur de la carte */
+    overflow: hidden; /* Masque les débordements */
+    display: flex; /* Aligne l'image et le contenu de la carte */
+    flex-direction: row;
+}
+
+.card .row {
+    width: 100%;
+    margin: 0; /* Supprime les marges */
+    padding: 0; /* Supprime le padding */
+}
+
+.card .col-md-6 {
+    padding: 0; /* Supprime le padding autour des colonnes */
+}
+
+.card img {
+    width: 100%; /* L'image occupe toute la largeur de sa colonne */
+    height: 100%; /* L'image remplit la hauteur de sa colonne */
+    object-fit: cover; /* Assure que l'image couvre l'espace sans déformation */
+    display: block; /* Enlève les marges internes */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0; /* Enlève le padding pour que le texte colle bien à l’image */
+    margin: 0; /* Enlève les marges */
+    height: 100%; /* Fait en sorte que le texte prenne toute la hauteur de la colonne */
+}
+
+.card-title, .card h4 {
+    margin: 0; /* Supprime les marges sous les titres */
+    padding: 5px; /* Ajuste le padding pour coller le texte au contenu */
+}
+.card-title, .card h5{
+    color:#264607;
+}
+.img-fluid {
+    max-height: 150px; /* Limite la hauteur maximale de l'image */
+    object-fit: cover; /* Couvre la zone sans déformer l'image */
+}
+
+/* Responsive : tout en colonne et disparition du chiffre */
+@media (max-width: 868px) {
+    #contenu {
+        height: auto;
+        padding: 20px;
+    }
+
+    .colonne1 {
+        transform: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .colonne2 {
+        text-align: center;
+    }
+
+    .chiffre h1 {
+        display: none; /* Cache le chiffre 08 */
+    }
+
+    /* Cartes en colonne avec réduction de taille */
+    .cardContainer {
+        flex-direction: row; /* Passer les cartes en colonne */
+        align-items: center;
+        bottom: 80px;
+    }
+
+    .card {
+        width: 90%; /* Réduit la taille de chaque carte */
+        max-width: 300px; /* Limite la largeur max pour les petits écrans */
+        margin: 10px 0; /* Ajoute un espace entre les cartes */
+    }
+
+    /* Image de Kessié en colonne */
+    .colonne2 img {
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+    .col h3 {
+        width: 20vw;
+        background-color: rgb(9, 55, 9);
+        text-align: center;
+    }
+    .col h1{
+        font-size: 40px;
+    }
+    #contenu {
+        position: relative; /* Assure que ::before est limité à #contenu */
+        height: 47vh;
+        background-image: url(../img/Franck\ kessie\ site\ web1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden; /* Utile pour couper tout débordement, mais peut être supprimé pour tests */
+    }
+    
+}
+
+
+
+
+
+
+
+.apropos {
+    margin-top: -154px;
+    background-color: #04340E;
+    padding: 30px;
+    font-family: Montserrat,sans-serif;
+}
+
+.apropos h1 {
+    color: #FF3E00;
+    font-size: 40px;
+}
+
+.apropos p {
+    color: white;
+    font-size: 20px;
+}
+
+.apropos button {
+    color: white;
+    background-color: #FF3E00;
+    border: none;
+    padding: 20px;
+   font-size: 15px;
+}
+
+.text{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-left:-300px;
+}
+@media only screen and (max-width: 800px){
+    .apropos {
+        margin-top: -254px;
+        background-color: #04340E;
+        padding: 30px;
+        font-family: Montserrat,sans-serif;
+    }
+
+.apropos h1 {
+    color: #FF3E00;
+    font-size: 25px;
+}
+
+.apropos p {
+    font-size: 13px;
+}
+
+.apropos button {
+    color: white;
+    background-color: #FF3E00;
+    border: none;
+    padding: 10px;
+    font-size: 11px;
+}
+
+.text{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-left:0px;
+}
+}
+
 body{
     font-family: Montserrat;
 }
@@ -37,7 +419,7 @@ button{
 .boutton1:hover{
     background-color: green;
 }
-h1{
+.petit_container .petit_container1 h1{
     color: green;
 }
 
