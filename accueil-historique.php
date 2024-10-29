@@ -1,4 +1,4 @@
-<div class="petit_container1">
+<div class="col-lg-6 col-md-6 col-sm-12 col-12">
     <h1>Historique</h1>
     <br>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime porro nam aliquid quas maiores recusandae

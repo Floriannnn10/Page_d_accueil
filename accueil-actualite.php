@@ -1,4 +1,4 @@
-<div class="petit_container">
+<div class="col-lg-6 col-md-6 col-sm-12 col-12">
     <h1>Actualités</h1>
     <br>
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat pariatur, optio natus maxime, repudiandae

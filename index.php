@@ -2,7 +2,7 @@
 <?php include 'entete.php' ?>
 <?php include 'apropos.php' ?>
 
-<div class="container">
+<div class="row">
 
     <?php include 'accueil-actualite.php' ?>
 
