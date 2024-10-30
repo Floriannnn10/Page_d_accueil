@@ -12,6 +12,8 @@
 </div>
 
 <?php 
-// include 'accueil-carousel.php'
+include 'accueil-carousel.php'
 ?>
+
+
 <?php include 'footer.php' ?>
